@@ -2,6 +2,8 @@
 
 ## Common memory usage
 
+![Common memory usage](https://user-images.githubusercontent.com/2970098/72621557-5658ec80-38f6-11ea-9189-950ce83d217a.png)
+
 ## Memory in JavaScipt
 
 ## Garbage collection
