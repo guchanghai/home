@@ -4,15 +4,52 @@
 
 ![Common memory usage](https://user-images.githubusercontent.com/2970098/72621557-5658ec80-38f6-11ea-9189-950ce83d217a.png)
 
+## API to show memory usage
+
+[process.memoryUsage](https://nodejs.org/api/process.html#process_process_memoryusage)
+
+The `process.memoryUsage()` method returns an object describing the memory usage of the Node.js process measured in bytes.
+
+For example, the code:
+```
+console.log(process.memoryUsage());
+```
+Will generate:
+```
+{
+  rss: 4935680,
+  heapTotal: 1826816,
+  heapUsed: 650472,
+  external: 49879
+}
+```
 ## Memory in JavaScipt
 
+```
+var numberVar = 100;                // allocates memory for a number
+
+var stringVar = 'node simplified';  // allocates memory for a string
+
+var objectVar = {a: 1};             // allocates memory for an object
+
+var a = [1, null, 'abra'];          // allocates memory for an array
+
+function f(a) {                     // allocates memory for a function
+  return a + 2;
+} 
+```
+
 ## Garbage collection
+
+### Reference-counting garbage collection
+
+### Mark-and-sweep algorithm
 
 # Knowledge Base
 
 ## Distance
 
-## Shadow size vs Actual size
+## Shallow size vs Retained size
 
 # Find the memory leak
 
