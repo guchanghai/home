@@ -1,6 +1,10 @@
 # Memory Leak in JavaScript
 
-Memory in JavaScipt
+## Common memory usage
+
+## Memory in JavaScipt
+
+## Garbage collection
 
 # Knowledge Base
 
@@ -16,4 +20,5 @@ Memory leak in global object is the most common case. There are another kind of 
 
 # Useful links
 
+[Memory Management and Garbage Collection in JavaScript](https://dzone.com/articles/memory-management-and-garbage-collection-in-javasc)
 Tools to analyze the memory leak.
