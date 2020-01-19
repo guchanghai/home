@@ -40,41 +40,37 @@ function f(a) {                     // allocates memory for a function
 ```
 Rough memthod to calculate a JS object size
 ```
-function roughSizeOfObject( object ) {
+const ECMA_SIZES = {
+  STRING: 2,
+  BOOLEAN: 4,
+  NUMBER: 8
+}
 
-    var objectList = [];
+function sizeof (object) {
+  if (Buffer.isBuffer(object)) {
+    return object.length
+  }
 
-    var recurse = function( value )
-    {
-        var bytes = 0;
-
-        if ( typeof value === 'boolean' ) {
-            bytes = 4;
-        }
-        else if ( typeof value === 'string' ) {
-            bytes = value.length * 2;
-        }
-        else if ( typeof value === 'number' ) {
-            bytes = 8;
-        }
-        else if
-        (
-            typeof value === 'object'
-            && objectList.indexOf( value ) === -1
-        )
-        {
-            objectList[ objectList.length ] = value;
-
-            for( i in value ) {
-                bytes+= 8; // an assumed existence overhead
-                bytes+= recurse( value[i] )
-            }
-        }
-
-        return bytes;
-    }
-
-    return recurse( object );
+  var objectType = typeof (object)
+  switch (objectType) {
+    case 'string':
+    return object.length * ECMA_SIZES.STRING
+    case 'boolean':
+      return ECMA_SIZES.BOOLEAN
+    case 'number':
+      return ECMA_SIZES.NUMBER
+    case 'object':
+      if (Array.isArray(object)) {
+        return object.map(sizeof).reduce(function (acc, curr) {
+          return acc + curr
+        }, 0)
+      } else {
+        return sizeOfObject(object)
+      }
+    default:
+      return 0
+  }
+}
 }
 ```
 
