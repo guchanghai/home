@@ -38,7 +38,8 @@ function f(a) {                     // allocates memory for a function
   return a + 2;
 } 
 ```
-Rough memthod to calculate a JS object size
+
+Code from NPM [object-sizeof](https://www.npmjs.com/package/object-sizeof) to calcuate JS object size
 ```
 const ECMA_SIZES = {
   STRING: 2,
@@ -47,10 +48,6 @@ const ECMA_SIZES = {
 }
 
 function sizeof (object) {
-  if (Buffer.isBuffer(object)) {
-    return object.length
-  }
-
   var objectType = typeof (object)
   switch (objectType) {
     case 'string':
@@ -70,7 +67,6 @@ function sizeof (object) {
     default:
       return 0
   }
-}
 }
 ```
 
