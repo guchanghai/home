@@ -23,6 +23,14 @@ Will generate:
   external: 49879
 }
 ```
+
+Type | Description
+--- | ---
+rss | Resident Set Size. It is the total memory allocated for the process execution
+heapTotal | Total size of the allocated heap
+heapUsed | Actual memory used during the execution of our process
+external | Memory used by “C++ objects bound to JavaScript objects managed by V8
+
 ## Memory in JavaScipt
 
 ```
