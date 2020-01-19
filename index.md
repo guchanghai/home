@@ -60,5 +60,8 @@ Memory leak in global object is the most common case. There are another kind of 
 # Useful links
 
 [Memory Management and Garbage Collection in JavaScript](https://dzone.com/articles/memory-management-and-garbage-collection-in-javasc)
-Tools to analyze the memory leak.
+
 [Memory Terminology](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101#object_sizes)
+
+Tools to analyze the memory leak.
+
