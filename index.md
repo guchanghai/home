@@ -39,6 +39,8 @@ function f(a) {                     // allocates memory for a function
 } 
 ```
 
+Primitive value is member of one of the types Undefined, Null, Boolean, Number, or String as defined in Clause 8
+
 Code from NPM [object-sizeof](https://www.npmjs.com/package/object-sizeof) to calcuate JS object size
 ```
 const ECMA_SIZES = {
