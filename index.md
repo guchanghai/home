@@ -42,7 +42,7 @@ function f(a) {                     // allocates memory for a function
 Code from NPM [object-sizeof](https://www.npmjs.com/package/object-sizeof) to calcuate JS object size
 ```
 const ECMA_SIZES = {
-  STRING: 2,      // each String value is represented by 16-bit unsigned integer
+  STRING: 2,      // Each String value is represented by 16-bit unsigned integer
   BOOLEAN: 4,
   NUMBER: 8       // Number uses the double-precision 64-bit format IEEE 754 values
 }
