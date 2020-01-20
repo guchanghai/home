@@ -108,5 +108,8 @@ Memory leak in global object is the most common case. There are another kind of 
 
 [Memory Terminology](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101#object_sizes)
 
+[NodeJs internals: V8 & garbage collector
+](https://medium.com/voodoo-engineering/nodejs-internals-v8-garbage-collector-a6eca82540ec)
+
 Tools to analyze the memory leak.
 
