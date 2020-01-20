@@ -31,6 +31,9 @@ heapTotal | Total size of the allocated heap
 heapUsed | Actual memory used during the execution of our process
 external | Memory used by “C++ objects bound to JavaScript objects managed by V8
 
+![Rss meory layout](https://user-images.githubusercontent.com/2970098/72691310-46e5c900-3ad9-11ea-9c0c-3203b9a94c81.png)
+
+
 ## Memory in JavaScipt
 
 ```
